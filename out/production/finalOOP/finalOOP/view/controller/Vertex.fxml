@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" onMouseClicked="#onMouseClick" onMouseDragged="#onMoustDragged" onMouseExited="#onMouseExited" onMouseMoved="#onMouseMoved" prefHeight="19.0" prefWidth="24.0" style="-fx-background-radius: 100%; -fx-background-color: yellow; -fx-border-width: 2; -fx-border-radius: 100%; -fx-border-color: gray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalOOP.view.controller.Vertex">
+    <children>
+        <Label fx:id="label" alignment="CENTER" layoutX="9.0" layoutY="7.0" prefHeight="32.0" prefWidth="28.0" text="01" textFill="#f20404">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <DropShadow height="10.0" radius="4.5" width="10.0" />
+    </effect>
+</AnchorPane>

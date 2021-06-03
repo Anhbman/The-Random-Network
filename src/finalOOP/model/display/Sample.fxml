@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="1205.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalOOP.view.controller.MainController">
+    <top>
+        <AnchorPane prefHeight="86.0" prefWidth="1205.0" style="-fx-background-color: #64ad54;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="264.0" layoutY="18.0" prefHeight="50.0" prefWidth="721.0" text="the random network generation problem">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane onDragDetected="#addVertex" prefHeight="718.0" prefWidth="281.0" style="-fx-background-color: #64ad54;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="46.0" layoutY="152.0" prefHeight="27.0" prefWidth="145.0" text="neighbor - count">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <Label layoutX="46.0" layoutY="215.0" prefHeight="21.0" prefWidth="133.0" text="Beta">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <Label layoutX="46.0" layoutY="88.0" prefHeight="21.0" prefWidth="142.0" text="Node - count">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Label>
+                <Button fx:id="Setup" layoutX="168.0" layoutY="303.0" mnemonicParsing="false" onAction="#Submit" text="Setup" />
+                <TextField fx:id="textNode" layoutX="207.0" layoutY="83.0" prefHeight="31.0" prefWidth="49.0" text="10" />
+                <TextField fx:id="textNeibor" layoutX="207.0" layoutY="147.0" prefHeight="31.0" prefWidth="49.0" />
+                <TextField fx:id="textBeta" layoutX="207.0" layoutY="210.0" prefHeight="31.0" prefWidth="49.0" />
+                <Button fx:id="Clear" layoutX="46.0" layoutY="303.0" mnemonicParsing="false" onAction="#Submit" prefHeight="26.0" prefWidth="50.0" text="Clear" />
+                <Button fx:id="AddEgde" layoutX="96.0" layoutY="346.0" mnemonicParsing="false" onAction="#addVertex" text="AddEgde" />
+                <Button fx:id="Close" layoutX="106.0" layoutY="469.0" mnemonicParsing="false" onMouseClicked="#onMouseClick" text="Close" />
+                <Button fx:id="addVertex" layoutX="93.0" layoutY="389.0" mnemonicParsing="false" onAction="#addVertex" text="addVertex" />
+                <Label layoutX="46.0" layoutY="149.0" text="StartNodes">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="113.0" fitWidth="218.0" layoutX="19.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../view/Picture/1_9sRnbNmq-o_Q2Lr4pnTBNg.jpeg" />
+                    </image>
+                </ImageView>
+                <Button fx:id="Run" layoutX="110.0" layoutY="269.0" mnemonicParsing="false" onAction="#Submit" text="Run" />
+                <Button layoutX="102.0" layoutY="346.0" mnemonicParsing="false" onAction="#addVertex" text="Rewire" />
+                <Label layoutX="48.0" layoutY="212.0" text="ConectEdges">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="48.0" layoutY="217.0" prefHeight="18.0" prefWidth="103.0" text="Probality">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane fx:id="View" onMouseDragged="#onMouseDreged" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane fx:id="Viewback" onDragDetected="#addVertex" onMouseEntered="#onMouseClick" prefHeight="717.0" prefWidth="922.0" />
+                <AnchorPane fx:id="Viewtop" prefHeight="200.0" prefWidth="200.0" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>
