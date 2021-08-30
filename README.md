@@ -1,4 +1,4 @@
-An application to (visually) demonstrate  the random network generation problem
+# An application to (visually) demonstrate  the random network generation problem
 
 a. Random network model
 
